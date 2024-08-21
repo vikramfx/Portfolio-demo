@@ -1,0 +1,268 @@
+:root{
+	--theme-text-font:"Roboto", sans-serif;
+	--theme-heading-font:"Raleway", sans-serif;
+	--theme-nav-font:"Poppins", sans-serif;
+	--theme-primary-color: #000000;
+	--theme-primary-text-color: #ffffff;
+	--theme-accent-color: #0078FF;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: var(--theme-text-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: var(--theme-heading-font);
+}
+
+/* Navbar */
+.navbar{
+	font-family: var(--theme-nav-font);
+	background-color: var(--theme-primary-color);
+}
+
+.navbar-brand h1{
+	font-size: 30px;
+	margin: 0;
+	font-weight: 700;
+	color: var(--theme-primary-text-color);
+}
+
+.nav-link{
+	margin: 0 1rem;
+	color: var(--theme-primary-text-color);
+	border-bottom: 2px solid transparent;
+	transition: all .5s ease;
+}
+
+.nav-link:hover{
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+/* Footer */
+
+footer{
+	background-color: var(--theme-accent-color);
+}
+
+footer p{
+	font-size: 0.9rem;
+	color: var(--theme-primary-text-color);
+}
+
+.hsr-social-icons{
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.7);
+	height: 50px;
+	width: 50px;
+	border:1px solid rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0.5rem;
+}
+
+/* Contact Us */
+
+.section{
+	background-color: #ffffff;
+	padding: 60px 0;
+	scroll-margin-top: 92px;
+}
+
+.section-title h2{
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.section-title h2:after{
+	content: "";
+	width: 50px;
+	height: 3px;
+	position: absolute;
+	background-color: var(--theme-accent-color);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.section-title p{
+	text-align: center;
+}
+
+#contact .bi{
+	font-size: 20px;
+	color: var(--theme-accent-color);
+	width: 56px;
+	height: 56px;
+	border: 1px solid var(--theme-accent-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+
+#contact .card h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 0 2px 0;
+}
+
+#contact .card p{
+	font-size: 14px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.hsr-theme-btn{
+	background-color: var(--theme-accent-color);
+	color: var(--theme-primary-text-color);
+	font-size: 16px;
+	font-weight: 400;
+	border-radius:2rem ;
+	padding: 0.5rem 2rem;
+}
+
+/* Hero Image */
+
+#hero-image{
+	background-image: url('https://bootstrapmade.com/demo/templates/DevFolio/assets/img/hero-img.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: calc(100vh - 62px);
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+#hero-image:before{
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	background-color: rgba(0,0,0, 0.7);
+}
+
+.hsr-hero-image{
+	min-height:calc(100vh - 62px) ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.hsr-hero-image h1{
+	font-weight: 700;
+	color: white;
+	z-index: 3;
+	font-size: 4rem;
+}
+
+.hsr-hero-image h3{
+	font-size: 2rem;
+	color: rgba(255, 255, 255, .7);
+	font-weight: 600;
+	z-index: 3;
+}
+
+.hsr-social-icons-set{
+	z-index: 3;
+}
+
+@media (max-width: 554px){
+	.hsr-hero-image h1{
+	font-size: 2rem;
+}
+
+.hsr-hero-image h3{
+	font-size: 1rem;
+}
+}
+
+/* About Us */
+
+.hsr-about h2{
+	text-align: left;
+}
+
+.hsr-about h2:after{
+	margin: 0;
+}
+
+.hsr-skill-heading{
+	font-weight: 700;
+}
+
+.hsr-progress{
+	margin: 0.5rem 0;
+}
+
+.skills{
+	display: block;
+	width: 100%;
+}
+
+.skills .skill{
+	font-size: 0.8rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.skills .value{
+	font-size: .8rem;
+	font-weight: 400;
+	float: right;
+}
+
+
+/* Services */
+
+.hsr-service-card a{
+	text-decoration: none;
+	color: black;
+}
+
+.hsr-service-card a:hover{
+	color: var(--theme-accent-color);
+}
+
+.hsr-service-card:hover ~ a{
+	color: var(--theme-accent-color);
+}
+
+.hsr-service-card .bi{
+	height: 70px;
+	width: 70px;
+	font-size: 30px;
+	background-color: var(--theme-accent-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.hsr-service-card:hover{
+	transform: translateY(-10px);
+	border-bottom: 5px solid var(--theme-accent-color) !important;
+}
+
+.hsr-service-card h3{
+	font-weight: 700;
+	font-size: 22px;
+	margin: 1rem 0;
+}
+
+.hsr-service-card p{
+	font-weight: 400;
+}
