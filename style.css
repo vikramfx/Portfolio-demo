@@ -30,14 +30,14 @@ h1, h2, h3, h4, h5, h6{
 	color: var(--theme-primary-text-color);
 }
 
-.nav-link{
+.navbar .nav-link{
 	margin: 0 1rem;
 	color: var(--theme-primary-text-color);
 	border-bottom: 2px solid transparent;
 	transition: all .5s ease;
 }
 
-.nav-link:hover{
+.navbar .nav-link:hover{
 	color: white;
 	border-bottom: 2px solid white;
 }
@@ -265,4 +265,58 @@ footer p{
 
 .hsr-service-card p{
 	font-weight: 400;
+}
+
+
+/* Portfolio */
+.nav-pills{
+	margin-top: 3rem;
+}
+
+.nav-pills .nav-link{
+	font-weight: 700;
+	color: rgba(0,0,0,0.75);
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.nav-pills .nav-link.active{
+	background-color: transparent !important;
+	color: var(--theme-accent-color);
+}
+
+.nav-pills .nav-link:hover{
+	color: var(--theme-accent-color);
+}
+
+.portfolio-card{
+	position: relative;
+}
+
+.caption{
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 80%;
+	position: absolute;
+	bottom: 10px;
+	padding: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.search-link{
+	position: absolute;
+	top: 32%;
+	right: 30px;
+	color: black;
+}
+
+.detail-link{
+	position: absolute;
+	top: 32%;
+	right: 10px;
+	color: black;
+}
+
+.portfolio-card:hover .caption{
+	display: block !important;
 }
